@@ -1,0 +1,98 @@
+/* Main container styles */
+.main-container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+}
+
+/* Composer section styles */
+.composer-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Dummy numbers section styles */
+.dummy-numbers-section {
+  flex: 2;
+  background-color: #e9ecef;
+  padding: 20px;
+  overflow-y: auto;
+  border-left: 1px solid #ced4da;
+}
+
+.dummy-numbers-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.dummy-numbers {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dummy-numbers li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #495057;
+  word-break: break-word;
+}
+
+/* Title styles */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+/* Textarea styles */
+.message-box {
+  width: 90%; /* Take most of the screen width */
+  max-width: 600px; /* Limit to 600px on larger screens */
+  height: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  resize: none;
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* Button styles */
+.send-button {
+  width: 90%; /* Match the textarea width */
+  max-width: 200px; /* Limit button width */
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.send-button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.send-button:active {
+  transform: translateY(0); /* Reset lift on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow for a pressed effect */
+}
