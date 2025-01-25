@@ -46,9 +46,10 @@ label {
 }
 
 input {
+  color: #000000;
   padding: 12px;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #2e2e2e;
   border-radius: 4px;
   box-sizing: border-box; /* Include padding in dimensions */
   width: 100%; /* Take full width of the parent */
