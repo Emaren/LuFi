@@ -1,0 +1,99 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+  overflow-x: hidden; /* Prevent side scrolling */
+}
+
+.phone-number-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Area code container */
+.area-code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.area-code-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.area-code-input {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for phone number input boxes */
+.phone-box {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000; /* Ensure text is visible */
+  background-color: #fff; /* Ensure good contrast */
+}
+
+.phone-box:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for separators */
+.phone-area-code,
+.phone-hyphen {
+  font-size: 18px;
+  margin: 0 5px;
+  color: #333;
+}
+
+.signup-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #45a049;
+}
+
+.login-link {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-link:hover {
+  background-color: #5a6268;
+}
+
+.hidden-phone-input {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+}

@@ -1,10 +1,12 @@
 /* Main container styles */
 .main-container {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
   background-color: #f8f9fa;
   box-sizing: border-box;
+  position: relative; /* Ensures absolute positioning of elements works */
 }
 
 /* Composer section styles */
@@ -25,7 +27,7 @@
   background-color: #e9ecef;
   padding: 20px;
   overflow-y: auto;
-  border-left: 1px solid #ced4da;
+  border-top: 1px solid #ced4da;
 }
 
 .dummy-numbers-section h2 {
@@ -66,12 +68,12 @@ h1 {
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   resize: none;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #495057;
   box-sizing: border-box;
 }
 
-/* Button styles */
+/* Send button */
 .send-button {
   width: 90%; /* Match the textarea width */
   max-width: 200px; /* Limit button width */
@@ -82,9 +84,9 @@ h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-align: center;
-  transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .send-button:hover {
@@ -94,5 +96,102 @@ h1 {
 
 .send-button:active {
   transform: translateY(0); /* Reset lift on click */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow for a pressed effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* User info styles */
+.user-info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #495057;
+  background-color: #f8f9fa;
+  padding: 5px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the text and the icon */
+}
+
+/* Profile icon styles */
+.profile-icon {
+  font-size: 24px;
+  color: #495057;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-icon:hover {
+  color: #007bff;
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Chat link container */
+.chat-link-container {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Chat link */
+.chat-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.chat-link:hover {
+  color: darkred;
+}
+
+/* Logout button */
+.logout-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+  background-color: #8b000e; /* Bootstrap danger color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #c82333; /* Slightly darker red */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.logout-button:active {
+  transform: translateY(0); /* Reset lift on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.signup-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.signup-button:active {
+  transform: translateY(0); /* Reset lift effect on click */
 }
